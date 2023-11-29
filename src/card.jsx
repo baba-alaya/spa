@@ -24,7 +24,7 @@ export default function Card({ info, onClick }) {
               gap: "1rem",
             }}
           >
-            <Header Fz={"1.5rem"} Ls={"0.2rem"} Color={"white"}>
+            <Header Fz={"1.5rem"} Ls={"0.2rem"} Color={"white"} >
               {info.name}
             </Header>
             <Flex

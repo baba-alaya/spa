@@ -46,6 +46,17 @@ li::first-letter {
   text-transform: uppercase;
 }
 
+.burger {
+  display: none ;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .overlay {
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .pcontain {
     width: 100% !important;
@@ -59,17 +70,41 @@ li::first-letter {
   .cbwrapper {
     margin: 1rem 1rem 0 1rem !important;
   }
-  .cwraper {
-    width: 95% !important;
-    height: 50vh !important;
-  }
+
   .hheader {
     font-size: 2rem !important;
   }
-}
-@media screen and (max-width: 1024) {
-  .overlay{
-    width: 100% !important;
-
+  .pwrapper,
+  .cbwrapper {
+    display: none !important;
   }
-}
+  .cwraper {
+    width: 95% !important;
+    height: calc(100vh - 4rem) !important;
+    margin-left: 1.3rem !important;
+  }
+  .lineContainer:first-child {
+    display: block;
+  }
+  .burger {
+    display: block ;
+    width: 3rem !important;
+  }
+  .icon {
+    display: block ;
+    width: 3rem !important;
+  }
+ }
+
+ @media screen and (max-width: 576px) {
+  .cwraper {
+    margin-left: .55rem !important;
+  }
+  .burger,.icon {
+    display: block ;
+    width: 2rem !important;
+  }
+ }
+ /* .cbwrapper {
+  margin: 1rem 1rem 0 1rem !important;
+} */

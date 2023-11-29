@@ -9,21 +9,21 @@ import { useState } from "react";
 function App() {
   let spaPackage = [
     {
-      name: "Selfcare haven1",
+      name: "Selfcare haven",
       price: "250",
       time: "3 Hours",
       quantity: " (per person)",
       img:'assets/turtle.jpg'
     },
     {
-      name: "Selfcare haven2",
+      name: "Selfcare haven",
       price: "250",
       time: "3 Hours",
       quantity: " (per person)",
       img:'assets/turtle.jpg'
     },
     {
-      name: "Selfcare haven3",
+      name: "Selfcare haven",
       price: "250",
       time: "3 Hours",
       quantity: " (per person)",

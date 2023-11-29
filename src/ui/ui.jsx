@@ -32,8 +32,13 @@ export const Navbar = styled.div`
   padding: 1rem;
   z-index: 1;
 
+
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 4rem 0 0 3rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 0 0 2rem;
   }
 `;
 
@@ -73,18 +78,45 @@ export const Header = styled.div`
   color: ${({ Color }) => (Color ? Color : "white")};
   text-transform: ${({ textTransform }) =>
     textTransform ? textTransform : "lowercase"};
+
+    @media (max-width: 1300px) {
+      font-size:1.5rem
+    }
+    @media (max-width: 768px) {
+      font-size:5rem
+    }
+    @media (max-width: 576px) {
+      font-size:2.7rem
+    }
+    @media (max-width: 320px) {
+      font-size:2rem
+    }
 `;
 
 export const SubHeader = styled.div`
   font-size: ${({ Fz }) => (Fz ? Fz : "1rem")};
   letter-spacing: ${({ Ls }) => (Ls ? Ls : "0")};
   color: ${({ Color }) => (Color ? Color : "white")};
+
+  @media (max-width: 768px) {
+    font-size:3rem
+  }
+  @media (max-width: 576px) {
+    font-size:1.7rem
+  }
 `;
 
 export const Paragraph = styled.div`
   font-size: ${({ Fz }) => (Fz ? Fz : "1rem")};
   letter-spacing: ${({ Ls }) => (Ls ? Ls : "0")};
   color: ${({ Color }) => (Color ? Color : "white")};
+
+  @media (max-width: 768px) {
+    font-size:2rem
+  }
+  @media (max-width: 576px) {
+    font-size:1.5rem
+  }
 `;
 
 export const Overlays = styled.div`
@@ -101,10 +133,16 @@ export const Overlays = styled.div`
   transition: ${({ transition }) => (transition ? transition : "none")};
   padding: 3rem 1rem 1rem 1rem;
 
+  @media (max-width: 1300px) {
+    width: 90%;
+    padding: 4rem 3rem 2rem 3rem;
+    border-top-left-radius: 210px;
+    border-top-right-radius: 210px;
+  }
   @media (max-width: 1024px) {
     width: 80%;
     padding: 4rem 1rem 2rem 1rem;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
   }
 `;
