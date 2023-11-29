@@ -1,0 +1,18 @@
+.logoContainer{
+    width: 30px;
+}
+
+.logoContainer > img {
+    width: 100%;
+}
+
+.lineContainer {
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineContainer > img {
+    width: 100%;
+}
