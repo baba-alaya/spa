@@ -2,7 +2,7 @@ import { Flex, Header, Paragraph, SubHeader, Wrapper } from "./ui/ui";
 import classes from "./styles.module.css";
 
 export default function Card({ info, onClick }) {
-  let url = "./assets/turtle.jpg";
+  let url = info.img;
   return (
     <>
       <Wrapper Width={"90%"} Height={"50vh"} className="cwraper">
@@ -24,7 +24,7 @@ export default function Card({ info, onClick }) {
               gap: "1rem",
             }}
           >
-            <Header Fz={"1.5rem"} Ls={"0.2rem"} Color={"white"} >
+            <Header Fz={"1.5rem"} Ls={"0.2rem"} Color={"white"}  >
               {info.name}
             </Header>
             <Flex

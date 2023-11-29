@@ -49,7 +49,7 @@ export default function Package({spaPackage , displayOverview}) {
   return (
     <Container className="pcontain" Width={"60%"} Background={"#9C6F4A"} Gap={"0px"} style={{overflow:"hidden"}}>
       <Wrapper Margin={"5rem 0 2rem 4rem"} className="pwrapper">
-          <Header className="hheader" Fz={'3rem'} textTransform={'uppercase'}>spa packages</Header>
+          <Header className="hheader" Fz={'3rem'}style={{textTransform:'uppercase'}}>spa packages</Header>
       </Wrapper>
       <Wrapper Margin={"0rem 0 0rem 4rem"} >
         <div>

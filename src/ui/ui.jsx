@@ -76,8 +76,7 @@ export const Header = styled.div`
   font-size: ${({ Fz }) => (Fz ? Fz : "1rem")};
   letter-spacing: ${({ Ls }) => (Ls ? Ls : "0")};
   color: ${({ Color }) => (Color ? Color : "white")};
-  text-transform: ${({ textTransform }) =>
-    textTransform ? textTransform : "lowercase"};
+  // text-transform: ${({ textTransform }) => textTransform ? textTransform : "lowercase"};
 
     @media (max-width: 1300px) {
       font-size:1.5rem
@@ -140,7 +139,7 @@ export const Overlays = styled.div`
     border-top-right-radius: 210px;
   }
   @media (max-width: 1024px) {
-    width: 80%;
+    // width: 80%;
     padding: 4rem 1rem 2rem 1rem;
     border-top-left-radius: 170px;
     border-top-right-radius: 170px;

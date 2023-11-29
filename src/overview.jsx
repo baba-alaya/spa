@@ -4,7 +4,7 @@ import { Container, Flex } from "./ui/ui";
 import { useState } from "react";
 
 export default function Overview({selectPackage}) {
-  let url = selectPackage?.img ? selectPackage.img : "assets/bg-test.jpg";
+  let url = selectPackage?.img ? selectPackage.img : "assets/slide2.jpg";
   const [Opacity, setOpacity] = useState(0);
   const [Scale, setScale] = useState(1);
   let display = Opacity=== 1 ? 0 : 1
@@ -40,7 +40,7 @@ export default function Overview({selectPackage}) {
           onMouseEnter={AddScale}
           onMouseLeave={RemoveScale}
         >
-          <Overlay Opacity={Opacity} />
+          <Overlay Opacity={Opacity} selectPackage={texts}/>
           <div
             style={{
               height: "100vh",
