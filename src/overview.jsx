@@ -40,7 +40,7 @@ export default function Overview({selectPackage}) {
           onMouseEnter={AddScale}
           onMouseLeave={RemoveScale}
         >
-          <Overlay Opacity={Opacity} selectPackage={texts}/>
+          <Overlay Opacity={Opacity} selectPackage={selectPackage}/>
           <div
             style={{
               height: "100vh",
